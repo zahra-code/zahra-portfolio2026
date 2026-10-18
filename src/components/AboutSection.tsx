@@ -189,7 +189,7 @@ const SkillsExplorer: React.FC = () => {
                 }`}
               >
                 <span>{g.title}</span>
-                <span className={`font-mono text-[11px] ${selected ? 'text-white/70' : 'text-black/40'}`}>
+                <span className={`font-mono text-[11px] ${selected ? 'text-white/80' : 'text-black/65'}`}>
                   {String(g.skills.length).padStart(2, '0')}
                 </span>
                 {selected && auto && !paused && !reduced && (
@@ -220,7 +220,7 @@ const SkillsExplorer: React.FC = () => {
             >
               {group.title}
             </h4>
-            <span className="text-xs font-mono text-black/50">
+            <span className="text-xs font-mono text-black/65">
               {String(active + 1).padStart(2, '0')} / {String(SKILL_GROUPS.length).padStart(2, '0')}
             </span>
           </div>

@@ -18,6 +18,11 @@ export const App: React.FC = () => {
       {/* Fixed Navbar (z-index: 50) */}
       <Navbar />
 
+      <main id="main">
+      <h1 className="sr-only">
+        Zahra Shahid: Web Developer, Data Analyst, Software Engineer and Data Scraper
+      </h1>
+
       {/* Hero Content Section (z-index: 10) */}
       <Hero />
 
@@ -49,11 +54,15 @@ export const App: React.FC = () => {
             'DATA SCRAPER',
           ]}
           bgClass="bg-chartreuse border-y-2 border-black"
-          colors={['text-black', 'text-rust', 'text-black', 'text-cornflower-deep']}
+          colors={['text-black', 'text-rust-dark', 'text-black', 'text-rust-dark']}
           starClass="text-black"
         />
 
-        {/* Functional Footer with Black Background */}
+      </div>
+      </main>
+
+      {/* Functional Footer with Black Background */}
+      <div className="relative z-20 w-full">
         <Footer />
       </div>
     </div>

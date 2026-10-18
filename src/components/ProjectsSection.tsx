@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-type Category = 'Web Development' | 'Data Analysis' | 'Web Scraping' | 'Databases' | 'Python Apps';
+type Category = 'Web Development' | 'Data Analysis' | 'Web Scraping' | 'Databases' | 'Python Apps' | 'Data Visualization';
 
 interface Project {
   number: string;
@@ -29,7 +29,7 @@ const PROJECTS: Project[] = [
     title: 'Dubai Fabrics — E-commerce Website',
     categories: ['Web Development'],
     description:
-      'A full-stack e-commerce website for Dubai Fabrics / Dubai Silk Center, featuring Ladies, Gents and Bridal categories, product browsing, customer accounts, wishlist and cart functionality. Includes store management and order workflows where implemented. Includes a fully independent admin panel to manage products, orders, stock, and website details, with integrated email verification workflows.',
+      'A full-stack e-commerce website for Dubai Fabrics / Dubai Silk Center, featuring Ladies, Gents and Bridal categories, product browsing, customer accounts, wishlist and cart functionality. Includes a fully independent admin panel to manage products, orders, stock, and website details, with integrated email verification workflows.',
     tech: ['React', 'Node.js', 'Express.js', 'Supabase', 'Tailwind CSS', 'Brevo'],
     image: '/projects/dubai-fabrics.jpg',
     imageAlt: 'Screenshot of the Dubai Fabrics homepage showing navigation, hero banner and shopping links',
@@ -172,7 +172,7 @@ const PROJECTS: Project[] = [
     title: 'Super Sales Analysis',
     categories: ['Data Analysis', 'Data Visualization'],
     description:
-      'A sales analysis project exploring sales performance, business metrics and trends through data analysis and visualizations. Specific findings and tools should reflect the actual project implementation.',
+      'A sales analysis project exploring sales performance, business metrics and trends through data analysis and visualizations.',
     tech: ['Data Analysis', 'Data Visualization'],
     image: '/projects/sales.png',
     imageAlt: 'Screenshot of the Super Sales Analysis project',
@@ -191,7 +191,7 @@ const PROJECTS: Project[] = [
   },
 ];
 
-const FILTERS: Array<'All' | Category> = ['All', 'Web Development', 'Data Analysis', 'Web Scraping', 'Databases', 'Python Apps'];
+const FILTERS: Array<'All' | Category> = ['All', 'Web Development', 'Data Analysis', 'Web Scraping', 'Databases', 'Python Apps', 'Data Visualization'];
 
 const prefersReduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

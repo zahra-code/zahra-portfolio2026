@@ -113,6 +113,7 @@ export const BackgroundVideo: React.FC = () => {
       ref={videoRef}
       src={VIDEO_SRC}
       muted
+      aria-hidden="true"
       playsInline
       preload="auto"
       onSeeked={handleSeeked}

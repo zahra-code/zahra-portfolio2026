@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export const Footer: React.FC = () => {
@@ -163,6 +163,8 @@ export const Footer: React.FC = () => {
                         name="name"
                         required
                         placeholder="Your name"
+                        aria-label="Your name"
+                        autoComplete="name"
                         className="w-full bg-cornflower/20 text-black placeholder-black/60 border-2 border-black rounded-lg px-3 py-2 text-xs font-medium focus:outline-none focus:border-rust"
                       />
                       <ValidationError prefix="Name" field="name" errors={state.errors} className="text-red-500 text-[10px] mt-1 font-bold" />
@@ -173,6 +175,8 @@ export const Footer: React.FC = () => {
                         name="email"
                         required
                         placeholder="Your email"
+                        aria-label="Your email"
+                        autoComplete="email"
                         className="w-full bg-cornflower/20 text-black placeholder-black/60 border-2 border-black rounded-lg px-3 py-2 text-xs font-medium focus:outline-none focus:border-rust"
                       />
                       <ValidationError prefix="Email" field="email" errors={state.errors} className="text-red-500 text-[10px] mt-1 font-bold" />
@@ -185,6 +189,7 @@ export const Footer: React.FC = () => {
                       rows={2}
                       required
                       placeholder="Short message or brief hello..."
+                      aria-label="Your message"
                       className="w-full bg-cornflower/20 text-black placeholder-black/60 border-2 border-black rounded-lg px-3 py-2 text-xs font-medium focus:outline-none focus:border-rust resize-none"
                     />
                     <ValidationError prefix="Message" field="message" errors={state.errors} className="text-red-500 text-[10px] mt-1 font-bold" />
